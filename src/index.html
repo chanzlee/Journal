@@ -4,24 +4,30 @@
 <head>
     <title>Journal</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <h1>Journal</h1>
-    <form id="journal-form">
-        <label for="title">Title:</label>
-        <input id="title" name="title" type="text">
-
-        <label for="body">Body:</label>
-        <input id="body" name="body" type="text">
-        <button type="submit">Submit</button>
-    </form>
-    <h3>Result</h3>
-    <ul id="result">
-        <li>Word Counter:<span id="wordCounter"></span></li>
-        <li>Vowel Counter:<span id="vowelCounter"></span></li>
-        <li>Counter:<span id="consonantCounter"></span></li>
-    </ul>
+    <div class="container">
+        <h1>Journal</h1>
+        <form id="journal-form" class="form-group">
+            <label for="title">Title:</label>
+            <input id="title" name="title" type="text" class="form-control"><br>
+            <div>
+                <label for="body">Body:</label>
+                <textarea id="body" rows="4" cols="50" class="form-control"></textarea><br>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <h3>Result</h3>
+        <ul id="result">
+            <li>Word Counter:<span id="wordCounter"></span></li>
+            <li>Vowel Counter:<span id="vowelCounter"></span></li>
+            <li>Counter:<span id="consonantCounter"></span></li>
+            <li>Teaser:<span id="getTeaser"></span></li>
+        </ul>
+    </div>
 </body>
 
 </html>
